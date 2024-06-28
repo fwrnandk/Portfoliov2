@@ -1,0 +1,434 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: poppins,sans-serif;
+    text-decoration: none;
+}
+
+body{
+    overflow-x: hidden;
+    background-color: #222;
+    font-family: Arial, sans-serif; /* Define a fonte para Arial ou uma fonte genérica sem serifa */
+    line-height: 1.5; 
+}
+
+#home {
+    padding: 20px;
+}
+
+#trajetoria {
+    padding: 20px;
+}
+
+#projetos {
+    padding: 20px;
+}
+
+span {
+    color:#00FF08;
+}
+
+.navlinks a:hover{
+    color: #00FF08;
+    transition: 0.2;
+}
+
+.hero-header{
+    width:100%;
+    height: 100%;
+    min-height: 100vh;
+    background: #222;
+}
+.wrapper{
+    width:1280px;
+    max-width: 95%;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+header{
+    padding: 40px 0 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.logo{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo i{
+    height: 45px;
+    width:45px;
+    background-color: #00FF08;
+    border-radius: 50%;
+    color:#fff;
+    font-weight: 700;
+    font-size: 1.5rem;
+    padding: 10px;
+    margin-right: 5px;
+    cursor: pointer;
+    text-align: center;
+    
+}
+.logo .logo-text{
+    font-size: 24px;
+    font-weight: 500;
+    color:#fff;
+}
+nav .togglebtn{
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    top:45px;
+    right: 3%;
+    z-index: 5;
+    cursor: pointer;
+    display: none;
+}
+nav .togglebtn span{
+    display: block;
+    background-color: #00FF08;
+    margin: 5px 0px;
+    width:100%;
+    height:3px;
+    transition: 0.3s;
+    transition-property:  transform, opacity;
+
+}
+nav .navlinks{
+    list-style-type: none;
+}
+nav .navlinks li{
+    display: inline-block;
+}
+nav .navlinks li a{
+     color:#e5e5e5;
+     margin-right: 2.5rem;
+}
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top:4rem;
+}
+.container .hero-pic{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 15px solid #444;
+    box-shadow: 5px 7px 25px rgba(0,0,0,0.5);
+}
+.hero-pic img{
+    height: 100%;
+    width:100%;
+    transition: 0.5s;
+}
+.hero-pic img:hover{
+    transform: scale(1.2);
+}
+.hero-text{
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+}
+.hero-text h5{
+    color:#e5e5e5;
+    font-size: 14px;
+}
+.hero-text h5 span{
+    color:#00FF08;
+    font-size: 16px;
+}
+.hero-text h1{
+    color: #00FF08;
+    font-size: 3rem;
+}
+.hero-text p{
+    color:#e5e5e5;
+
+}
+.btn-group{
+    margin:45px 0;
+}
+.btn-group .btn{
+    border-color: #d5d5d5;
+    color:#fff;
+    background-color: #333;
+    padding: 12px 25px;
+    margin: 5px 0px;
+    margin-right:7px;
+    border-radius: 30px;
+    border:2px solid #e5e5e5;
+    box-shadow:  0 10px 10px -8px rgb(0 0 0 / 78%);
+}
+.btn.active{
+    border-color: #00FF08;
+}
+
+
+.hero-text .social i{
+    color: #e5e5e5;
+    font-size: 30px;
+    margin-right: 10px;
+    transition: 0.5s;
+}
+.hero-text .social i:hover{
+    color:#00FF08;
+    transform: rotate(360deg);
+}
+
+.flex {
+    display: flex;
+    gap: 60px;
+}
+
+h2.title {
+    color: white;
+    font-size: 38px;
+    text-align: center;
+}
+
+section.trajetoria {
+    padding: 48px 4%;
+}
+
+.trajetoria .trajetoria-box {
+    color: white;
+    padding: 48px;
+    border-radius: 20px;
+    margin-top: 45px;
+    transition: .2s;
+    flex: 1;
+    box-sizing: border-box;
+}
+
+.trajetoria .trajetoria-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #ffffff78;
+}
+
+.trajetoria .trajetoria-box i {
+    font-size: 70px;
+    color: #00FF08;
+}
+
+.trajetoria .trajetoria-box h3 {
+    font-size: 28px;
+    margin: 15px 0;
+}
+
+
+.projetos {
+    padding: 48px 4%;
+}
+
+h2.title {
+    color: white;
+    font-size: 38px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.projetos {
+    padding: 48px 4%;
+}
+
+h2.title {
+    color: white;
+    font-size: 38px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.projeto-box {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+    background-color: #333; /* Ajuste conforme necessário */
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    transition: .2s;
+}
+
+.projeto-box img {
+    width: 150px;
+    height: auto;
+    margin-right: 20px;
+    border-radius: 10px;
+}
+
+.projeto-content {
+    max-width: calc(100% - 170px); /* Ajuste conforme necessário */
+}
+
+.projeto-content h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.projeto-content p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.projeto-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #ffffff78;
+}
+
+.verdinho {
+    color:#00FF08;
+}
+
+@media (max-width: 768px) {
+    .projeto-box {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .projeto-box img {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .projeto-content {
+        max-width: 100%;
+    }
+
+    h2.title {
+        font-size: 28px;
+    }
+
+    .projeto-content h3 {
+        font-size: 22px;
+    }
+
+    .projeto-content p {
+        font-size: 14px;
+    }
+}
+
+#fim {
+    background-color: #000000;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#fim p {
+    color: white;
+    font-size: 22px;
+}
+
+
+
+/* Respnosiv design & displaying navbar for small screen */
+@media(max-width:930px)
+{
+    nav .togglebtn{
+        display: initial;
+    }
+    /* for toggle button**/
+    .click {
+        top:45px;
+    }
+    .click span{
+        position: absolute;
+        margin-top:12px
+    }
+    .click span:first-child{
+        transform: rotate(-40deg);
+    }
+    .click span:nth-child(2)
+    {
+        opacity: 0;
+        margin:0;
+    }
+    .click span:last-child{
+        transform: rotate(45deg);
+        top:0;
+    }
+    nav .navlinks{
+        position: absolute;
+        top:110px;
+        right:-100%;
+        bottom: 0;
+        width: 60%;
+        height: 100vh;
+        background-color: #222;
+        z-index: 3;
+        box-shadow: 5px 13px 30px rgba(0,0,0,0.1);
+        transition: 0.5s;
+        padding: 25px 0px;
+    }
+    nav .navlinks li{
+        display: block;
+    }
+    nav .navlinks li a{
+        display: block;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+    nav .navlinks.open{
+        right:0;
+    }
+}
+@media(max-width:768px)
+{
+    .container{
+        flex-direction: column;
+        padding-top:2rem
+    }
+    .hero-text{
+        padding:40px 0px;
+    }
+}
+
+/* responsividade da sessão de trajetória*/
+
+@media (max-width: 1024px) {
+    .trajetoria .trajetoria-box {
+        padding: 24px;
+    }
+
+    h2.title {
+        font-size: 32px;
+    }
+
+    .trajetoria .trajetoria-box i {
+        font-size: 60px;
+    }
+
+    .trajetoria .trajetoria-box h3 {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 768px) {
+    .flex {
+        flex-direction: column;
+    }
+
+    .trajetoria .trajetoria-box {
+        padding: 24px;
+    }
+
+    h2.title {
+        font-size: 28px;
+    }
+
+    .trajetoria .trajetoria-box i {
+        font-size: 50px;
+    }
+
+    .trajetoria .trajetoria-box h3 {
+        font-size: 22px;
+    }
+}
